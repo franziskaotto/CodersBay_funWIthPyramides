@@ -6,20 +6,19 @@ public class LeftBlock {
         //i for rows
         //j for coloumns
 
-        int i = 1;
-        int j;
 
-        while (i <= 5) {
-            j = 1;
-            while (j <= (i % 2 == 0 ? i + 1 : i)) {
-                System.out.print(i);
-                j++;
+        int i, j, row = 6;
+
+        for (i = 1; i < row; i++) {
+//inner loop for columns
+            for (j = 1; j <= i; j++) {
+//prints stars
+                System.out.print(i + " ");
             }
+//throws the cursor in a new line after printing each line
             System.out.println();
-            i++;
+
         }
-
     }
-
-
 }
+
